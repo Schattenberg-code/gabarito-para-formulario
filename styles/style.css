@@ -1,0 +1,73 @@
+:root {
+    --cor-fundo: #a1e2db;
+    --cor-fundo-2: #74d3f8;
+    --cor-form: #9099a5;
+    --cor-text: #000000;
+    --cor-erro: #8f3e3e;
+    --cor-sucesso: #689257;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5%;
+
+    color: var(--cor-text);
+    background-color: var(--cor-fundo);
+}
+
+main {
+    background-color: var(--cor-fundo-2);
+    padding: 2%;
+    gap: 2%;
+    border-radius: 10%;
+    box-shadow: 10px 10px 15px rgba(19, 20, 55, 0.3);
+}
+
+#form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: end;
+}
+
+#form-login input {
+    border-radius: 8px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#form-login button {
+    border-radius: 8px;
+    padding: 5px;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+#form-login button:hover {
+    background-color: #b9b9b9;
+}
+
+.toggle {
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    color: var(--cor-text);
+}
+
+.erro{
+    color: var(--cor-erro);
+    font-size: 15px;
+    text-align: center;
+}
+
+.sucesso{
+    color: var(--cor-erro);
+    font-size: 12px;
+    text-align: center;
+}
