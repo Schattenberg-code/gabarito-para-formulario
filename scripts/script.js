@@ -4,7 +4,7 @@ document.getElementById("toggle").onclick = () =>{
 
     cadastro = !cadastro;
 
-    document.getElementById("title").innerText = cadastro ? "-Cadastro-" : "-Login-";
+    document.getElementById("title").innerText = cadastro ? "Cadastrar" : "Entrar";
     document.querySelector("button").innerText = cadastro ? "Cadastrar" : "Entrar";
 
     document.getElementById("toggle").innerText = cadastro 
@@ -44,7 +44,7 @@ document.getElementById("toggle").onclick = () =>{
             if(salva === senha){
                 mensagem.innerHTML = "<div class='sucesso'><p>logado com sucesso</p></div>";
             } else {
-                mensagem.innerHTML = "<div class='sucesso'><p>dados invalidos!</p></div>";
+                mensagem.innerHTML = "<div class='erro'><p>dados invalidos!</p></div>";
             }
         }
 
